@@ -139,7 +139,7 @@ export default function App() {
   useEffect(function () {
     console.log(eightPin);
     var s = Snap('#' + inputEl.current.id);
-    let eightPinCom = s.parse(eightPin);
+    let eightPinCom = Snap.parse(eightPin);
     s.add(eightPinCom);
     elements.nodes.forEach(function (item, index) {
       let group = s.g();

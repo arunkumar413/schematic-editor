@@ -1,5 +1,5 @@
 export const eightPin = ` <g class='eight-pin'>
-<circle cx={100} cy={100} r={3} fill="blue" />
+<circle cx={"100"} cy={"100"} r={3} fill="blue" />
 <path d="M100 100 H130" strokeWidth={1} stroke="red" />
 
 <circle cx={100} cy={120} r={3} fill="blue" />
