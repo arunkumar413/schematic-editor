@@ -1,6 +1,9 @@
+import react, { useEffect, useState } from 'react'
+
+
 export function EightPin() {
   return (
-    <g class="eight-pin">
+    <g className="eight-pin">
       <circle cx={'100'} cy={'100'} r={3} fill="blue" />
       <path d="M100 100 H130" strokeWidth={1} stroke="red" />
 
