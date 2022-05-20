@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Snap from 'snapsvg';
-import { eightPin } from '../src/components/eightPin';
+import { EightPin } from '../src/components/eightPin';
 
 import './style.css';
 
@@ -184,7 +184,7 @@ export default function App() {
   return (
     <svg ref={inputEl} id="svg-container" width={1000} height={1000}>
       {/* {rectElements} */}
-      {eightPin}
+      {EightPin}
     </svg>
   );
 }
