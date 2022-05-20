@@ -1,9 +1,9 @@
 import react, { useEffect, useState } from 'react'
 
 
-export function EightPin() {
+export function EightPin(props) {
   return (
-    <g className="eight-pin">
+    <g className="eight-pin IC component">
       <circle cx={'100'} cy={'100'} r={3} fill="blue" />
       <path d="M100 100 H130" strokeWidth={1} stroke="red" />
 
@@ -28,6 +28,8 @@ export function EightPin() {
       <path d="M200 160 H230" strokeWidth={1} stroke="red" />
       <circle cx={230} cy={100} r={3} fill="blue" />
       <rect x={130} y={90} width={70} height={80} fill="yellow" stroke="blue" />
+      <text x="135" y="140" className="component-text">{props.name}</text>
+
     </g>
   );
 }

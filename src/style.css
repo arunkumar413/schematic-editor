@@ -7,11 +7,26 @@ p {
 
 .pin {
   fill: blue;
-  stroke: black;
-  stroke-width: 2;
+  stroke: red;
+  stroke-width: 1;
 
 }
 
 .node {
   stroke: blue;
+}
+
+rect {
+  fill: yellow;
+  stroke: blue;
+}
+
+text {
+  font-family: sans-serif;
+  font-size: 14;
+}
+
+svg {
+
+  border: solid 1px gray;
 }
