@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Snap from 'snapsvg';
-import { ReactComponent as EightPin } from './src/components/eightPin.svg';
+import {  EightPin } from '../src/components/eightPin'
 
 import './style.css';
 
@@ -138,7 +138,7 @@ export default function App() {
 
   useEffect(function () {
     var s = Snap('#' + inputEl.current.id);
-    let eightPinCom = Snap.parse(EightPin);
+    // let eightPinCom = Snap.parse(EightPin);
     // s.add(eightPinCom);
     elements.nodes.forEach(function (item, index) {
       let group = s.g();
@@ -183,7 +183,7 @@ export default function App() {
   return (
     <svg ref={inputEl} id="svg-container" width={1000} height={1000}>
       {/* {rectElements} */}
-      {EightPin}
+      
     </svg>
   );
 }
