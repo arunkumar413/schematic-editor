@@ -15,8 +15,13 @@ p {
 .node {
   stroke: blue;
 }
-.node:hover{
+
+.node:hover {
   cursor: cell;
+  r: 8;
+  fill: green;
+
+
 }
 
 rect {
