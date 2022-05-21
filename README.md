@@ -1,4 +1,6 @@
-# react-jfjuda
+# Schematic Editor
+
+A simple schematic editor based of SVG to draw circuit diagrams.
 
 Each pin circle has a unique CSS ID generated using the `name` prop passed to the component and the pin name.
 
