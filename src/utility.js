@@ -9,7 +9,7 @@ export function createGrid() {
     // diagonalMovement: pathfinding.DiagonalMovement.Never,
     allowDiagonal: false,
     heuristic: pathfinding.Heuristic.manhattan,
-    weight: 1,
+    weight: 2,
   });
 }
 
@@ -49,11 +49,19 @@ export function drawConnections(s, connection) {
   let x2 = toParentX + toPinX;
   let y2 = toParentY + toPinY;
 
+  // testing coordinates
+
+  // let x1 = 50;
+  // let y1 = 20;
+  // let x2 = 100;
+  // let y2 = 100;
+
   var path = finder.findPath(x1, y1, x2, y2, grid);
 
   path.forEach(function (item, index) {
-    return s.circle(item[0], item[1], 1).attr("fill", "#ff0000");
+    return s.circle(item[0], item[1], 0.5).attr("fill", "#ff0000");
   });
+  debugger;
 }
 
 export function onStart(evt) {
